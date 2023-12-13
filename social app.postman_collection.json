@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "3db1c37f-557a-4763-be16-7e0808bbb4be",
+		"name": "social app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19278260"
+	},
+	"item": [
+		{
+			"name": "friend-list",
+			"item": [
+				{
+					"name": "Send friend request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sender\":\"6571f62157604718ae4911a5\",\r\n    \"receiver\":\"6570baeefb2d770357b1624c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/v1/friends/send-request",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"friends",
+								"send-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "friend requests list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/v1/friends/6570baeefb2d770357b1624c/friend-request-list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"friends",
+								"6570baeefb2d770357b1624c",
+								"friend-request-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "friend list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/v1/friends/6570baeefb2d770357b1624c/friends-list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"friends",
+								"6570baeefb2d770357b1624c",
+								"friends-list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postTitle\":\"This is a post 4 by mark smith\",\r\n    \"author\":\"6571f62157604718ae4911a5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/v1/posts/create-post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"create-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Mark Smith\",\r\n    \"email\":\"marksmith@gmail.com\",\r\n    \"password\":\"Secret12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/v1/user/create-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"create-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dislike post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/v1/posts/like-post/6570c773e439fabe744757a9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"like-post",
+						"6570c773e439fabe744757a9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/v1/posts/like-post/6570c773e439fabe744757a9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"like-post",
+						"6570c773e439fabe744757a9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"email\":\"JohnDoe@gmail.com\",\r\n    \"password\":\"Secret12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
