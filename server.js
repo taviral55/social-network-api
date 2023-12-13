@@ -15,7 +15,7 @@ app.use("/api/v1/", friendsRouter);
 
 const startServer = async () => {
   try {
-    await connectDB("mongodb+srv://shehzadamin:ccDRl6jnuMIbmeSD@cluster0.m5i1btj.mongodb.net/nosql-social-app?retryWrites=true&w=majority");
+    await connectDB("mongodb+srv://taviral55:Efisinsauto5@cluster0.yd2b7s3.mongodb.net/");
     app.listen(PORT, () => {
       console.log(`Server is listening on port ${PORT}`);
     });

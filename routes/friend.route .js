@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { friendRequest, friendsList, pendingRequest } from "../comtrollers/friend.controller.js";
+import { friendRequest, friendsList, pendingRequest } from "../controllers/friend.controller.js";
 
 const router = Router();
 
