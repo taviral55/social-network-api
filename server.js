@@ -15,7 +15,7 @@ app.use("/api/v1/", friendsRouter);
 
 const startServer = async () => {
   try {
-    await connectDB("mongodb+srv://taviral55:Efisinsauto5@cluster0.yd2b7s3.mongodb.net/");
+    await connectDB("mongodb+srv://taviral55:Efisinsauto5@cluster0.yd2b7s3.mongodb.net/socialmediadata?retryWrites=true&w=majority");
     app.listen(PORT, () => {
       console.log(`Server is listening on port ${PORT}`);
     });
